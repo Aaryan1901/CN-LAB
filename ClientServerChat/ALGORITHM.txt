@@ -1,0 +1,39 @@
+
+Algorithm for Chat Server
+Start the Server
+
+Create a ServerSocket on a specific port (1234).
+Wait for a client to connect.
+Establish Connection
+
+Accept the incoming client connection.
+Create input and output streams to communicate with the client.
+Handle Incoming Messages
+
+Start a separate thread to listen for and display messages from the client.
+Send Messages to Client
+
+Read messages from the server console.
+Send the messages to the client using the output stream.
+If the message is "bye", close the connection and terminate the server.
+Close Resources
+
+Close the socket and input/output streams.
+Algorithm for Chat Client
+Connect to the Server
+
+Create a Socket to connect to the server on localhost:1234.
+Establish Communication
+
+Create input and output streams to communicate with the server.
+Handle Incoming Messages
+
+Start a separate thread to listen for and display messages from the server.
+Send Messages to Server
+
+Read messages from the client console.
+Send the messages to the server using the output stream.
+If the message is "bye", close the connection and terminate the client.
+Close Resources
+
+Close the socket and input/output streams.
